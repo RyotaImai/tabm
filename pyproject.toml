@@ -14,7 +14,7 @@ classifiers = [
 ]
 dependencies = [
     "torch>=1.12,<3",
-    "rtdl_num_embeddings>=0.0.12,<0.1",
+    "rtdl_num_embeddings @ git+https://github.com/RyotaImai/rtdl-num-embeddings",
     "typing_extensions>=4.6.0,<5",
 ]
 dynamic = ["version", "description"]
@@ -99,7 +99,6 @@ arange = "arange"
 constraint-dependencies = [
     "torch==1.12; sys_platform == 'darwin'",
     "torch==1.13; sys_platform == 'linux'",
-    "rtdl_num_embeddings==0.0.12",
     "typing_extensions==4.6.0",
 ]
 package = true
