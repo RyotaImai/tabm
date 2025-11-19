@@ -99,7 +99,9 @@ arange = "arange"
 constraint-dependencies = [
     "torch==1.12; sys_platform == 'darwin'",
     "torch==1.13; sys_platform == 'linux'",
-    "rtdl_num_embeddings==0.0.12",
     "typing_extensions==4.6.0",
 ]
 package = true
+
+[tool.uv.sources]
+rtdl_num_embeddings = { git = "https://github.com/RyotaImai/rtdl-num-embeddings" }
