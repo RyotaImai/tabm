@@ -104,4 +104,4 @@ constraint-dependencies = [
 package = true
 
 [tool.uv.sources]
-rtdl_num_embeddings = { git = "https://github.com/RyotaImai/rtdl-num-embeddings" }
+rtdl_num_embeddings = { git = "https://github.com/RyotaImai/rtdl-num-embeddings", subdirectory = "package" }

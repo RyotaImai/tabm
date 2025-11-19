@@ -1,5 +1,5 @@
 version = 1
-revision = 2
+revision = 3
 requires-python = ">=3.9"
 resolution-markers = [
     "python_full_version >= '3.12' and sys_platform == 'darwin'",
@@ -18,7 +18,6 @@ resolution-markers = [
 
 [manifest]
 constraints = [
-    { name = "rtdl-num-embeddings", specifier = "==0.0.12" },
     { name = "torch", marker = "sys_platform == 'darwin'", specifier = "==1.12" },
     { name = "torch", marker = "sys_platform == 'linux'", specifier = "==1.13" },
     { name = "typing-extensions", specifier = "==4.6.0" },
@@ -2577,14 +2576,10 @@ wheels = [
 [[package]]
 name = "rtdl-num-embeddings"
 version = "0.0.12"
-source = { registry = "https://pypi.org/simple" }
+source = { git = "https://github.com/RyotaImai/rtdl-num-embeddings?subdirectory=package#063a71c3ee5824c3717033d64dc094d15a0108e2" }
 dependencies = [
     { name = "torch", version = "1.12.0", source = { registry = "https://pypi.org/simple" }, marker = "sys_platform == 'darwin'" },
     { name = "torch", version = "1.13.0", source = { registry = "https://pypi.org/simple" }, marker = "sys_platform != 'darwin'" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/1c/8c/a72229cb7e07d93c9e067b36ed069a8b46c0c22b3abc1c0ac54497a696d3/rtdl_num_embeddings-0.0.12.tar.gz", hash = "sha256:44711d4991b80545fae15665d8fcf817258868370f9cf3370a5e569a062978a5", size = 1189159, upload-time = "2025-04-13T11:53:39.357Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/18/b9/cef7a26a7999740d5067406b6e856fe0f18f1dd8bd2052e05f4bf4846c5e/rtdl_num_embeddings-0.0.12-py3-none-any.whl", hash = "sha256:87fd61270118915cf40888f2164f3a1f0353edf702f15fd91e71a147d23c930d", size = 13293, upload-time = "2025-04-13T11:53:36.346Z" },
 ]
 
 [[package]]
@@ -2924,7 +2919,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "rtdl-num-embeddings", specifier = ">=0.0.12,<0.1" },
+    { name = "rtdl-num-embeddings", git = "https://github.com/RyotaImai/rtdl-num-embeddings?subdirectory=package" },
     { name = "torch", specifier = ">=1.12,<3" },
     { name = "typing-extensions", specifier = ">=4.6.0,<5" },
 ]
